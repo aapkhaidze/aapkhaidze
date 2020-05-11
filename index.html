@@ -23,6 +23,9 @@
         console.log('Query variable %s not found', variable);
     }
 
-    document.getElementById("access_token").innerText = getQueryVariable("access_token");
+    const token = getQueryVariable("access_token");
+    if (token){
+        document.getElementById("access_token").innerText = token;
+    }
 </script>
 </html>
