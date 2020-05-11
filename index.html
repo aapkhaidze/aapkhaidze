@@ -21,10 +21,11 @@
             }
         }
         console.log('Query variable %s not found', variable);
+        return null;
     }
 
     const token = getQueryVariable("access_token");
-    if (token){
+    if (token) {
         document.getElementById("access_token").innerText = token;
     }
 </script>
